@@ -1448,14 +1448,10 @@ document.addEventListener("DOMContentLoaded",()=>{
 
             }
 
-            result.classList.remove("hidden");
+            const batch = input.value.trim().toUpperCase();
+const pdfUrl = `reports/${batch}.pdf`;
 
-            result.scrollIntoView({
-
-                behavior:"smooth",
-                block:"center"
-
-            });
+window.open(pdfUrl, "_blank");
 
         });
 
